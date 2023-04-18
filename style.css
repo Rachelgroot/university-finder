@@ -1,32 +1,274 @@
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: auto;
+  padding: 10px;
 }
 
 .top-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .user {
-    display: flex;
-    flex: 1;
-    justify-content: end;
-    margin: 0 400px;
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  margin: 0 400px;
 }
 
 .user-btn {
-    padding: 10px;
+  padding: 10px;
 }
 
 .heading {
-    display: flex;
-    flex: 1;
-    margin: 0 400px;
-    padding: 5px;
-    justify-content: center;
-    box-shadow: 0px 0px 5px 0px rgba(134, 134, 134, 0.5)
+  display: flex;
+  flex: 1;
+  margin: 0 400px;
+  padding: 5px;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 0px rgba(134, 134, 134, 0.5)
 }
 
 .heading-btn {
-    padding: 20px;
+  padding: 20px;
 }
+
+/*Batch 1 sa schools*/
+
+#services{
+  
+}
+
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list div{
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+
+}
+
+.services-list div i{
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.services-list div a{
+  text-decoration: none;
+  color #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div:hover{
+  background: lightgreen;
+  transform: translate(-10px);
+}
+
+/*Batch 2 sa schools*/
+
+#services-batch2{
+  border-color: black;
+}
+
+.services-list2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.services-list2 div{
+
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list2 div i{
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.services-list2 div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list2 div a{
+  text-decoration: none;
+  color #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list2 div:hover{
+  background: red;
+  transform: translate(-10px);
+}
+
+/*Batch 3 sa schools*/
+
+#services-batch3{
+  border-color: black;
+}
+
+.services-list3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.services-list3 div{
+
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list3 div i{
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.services-list3 div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list3 div a{
+  text-decoration: none;
+  color #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list3 div:hover{
+  background: red;
+  transform: translate(-10px);
+}
+
+/*Batch 4 sa schools*/
+
+#services-batch4{
+  border-color: black;
+}
+
+.services-list4{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.services-list4 div{
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list4 div i{
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.services-list4 div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list4 div a{
+  text-decoration: none;
+  color #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list4 div:hover{
+  background: red;
+  transform: translate(-10px);
+}
+
+
+/*Batch 5 sa schools*/
+
+#services-batch5{
+  border-color: black;
+}
+
+.services-list5{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.services-list5 div{
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list5 div i{
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.services-list5 div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list5 div a{
+  text-decoration: none;
+  color #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list5 div:hover{
+  background: red;
+  transform: translate(-10px);
+}
+
+
+
+
