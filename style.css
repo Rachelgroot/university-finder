@@ -1,12 +1,35 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: auto;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  padding: 0;
+  height: 5px;
+  border-color: rgb(255, 214, 138);
+  background-color: orange;
+}
+
+input {
+  margin-top: 10px;
   padding: 10px;
+  border: 2px solid rgb(194, 194, 194);
+}
+
+button {
+  background-color: rgb(255, 223, 163);
+  border: 0;
+  border-radius: 4px;
 }
 
 .top-container {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  padding-bottom: 25px;
+  background-color: rgb(255, 166, 0);
+  margin-bottom: 10px;
 }
 
 .user {
@@ -18,6 +41,7 @@
 
 .user-btn {
   padding: 10px;
+  color: white;
 }
 
 .heading {
@@ -25,250 +49,118 @@
   flex: 1;
   margin: 0 400px;
   padding: 5px;
-  justify-content: center;
-  box-shadow: 0px 0px 5px 0px rgba(134, 134, 134, 0.5)
+  justify-content: end;
+  align-items: center;
+  box-shadow: -1px 0px 5px 0px rgba(211, 210, 210, 0.5);
+  background-color: rgb(255, 251, 214);
+  border-radius: 8px;
+}
+
+.heading > div {
+  display: flex;
+  flex: 1;
+  justify-content: start;
+}
+
+.heading > div > button {
+  font-size: 30px;
 }
 
 .heading-btn {
+  font-size: 20px;
   padding: 20px;
+  color: rgb(156, 120, 0); 
 }
 
 /*Batch 1 sa schools*/
 
-#services{
+/* #services{
   
-}
+} */
 
-.services-list{
+/* .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+} */
+
+.sub-title {
+  margin: 20px;
 }
 
-.services-list div{
-  align-items: center;
-  padding: 40px;
+.body-container {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  margin: 0 40px;
+  box-shadow: -1px 0px 5px 0px rgba(105, 105, 105, 0.5);
+  /* border: 2px solid green; */
+}
+
+.filter-btn {
+  margin-top: 10px;
+  height: 30px;
+}
+
+.schools {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.services-list {
+  display: flex;
+  width: 1200px;
+  margin-top: 30px;
+  /* border: 2px solid blue; */
+}
+
+.services-list div {
+  height: 400px;
+  width: auto;
+  flex: 1;
+  padding: 30px;
   text-align: center;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
-
+  box-sizing: border-box;
+  box-shadow: 1px 2px 3px 4px rgba(224, 224, 224, 0.4);
+  margin-right: 20px;
+  /* border: 2px solid red; */
 }
 
-.services-list div i{
-  font-size: 100px;
-  margin-bottom: 30px;
+@media screen and (max-width:990px) {
+  .schools {flex-wrap: wrap;}
+  .services-list:first-child {flex-basis: 100%}
 }
 
-.services-list div h2{
+.services-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
   text-align: center;
+  /* border: 2px solid red; */
 }
 
-.services-list div a{
+.services-list div a {
   text-decoration: none;
-  color #fff;
+  color: #fff;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
 }
 
-.services-list div:hover{
-  background: lightgreen;
+.services-list div:hover {
+  background: rgb(255, 217, 147);
   transform: translate(-10px);
 }
-
-/*Batch 2 sa schools*/
-
-#services-batch2{
-  border-color: black;
-}
-
-.services-list2{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  text-align: justify;
-}
-
-.services-list2 div{
-
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-
-.services-list2 div i{
-  font-size: 100px;
-  margin-bottom: 30px;
-}
-
-.services-list2 div h2{
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.services-list2 div a{
-  text-decoration: none;
-  color #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.services-list2 div:hover{
-  background: red;
-  transform: translate(-10px);
-}
-
-/*Batch 3 sa schools*/
-
-#services-batch3{
-  border-color: black;
-}
-
-.services-list3{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  text-align: justify;
-}
-
-.services-list3 div{
-
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-
-.services-list3 div i{
-  font-size: 100px;
-  margin-bottom: 30px;
-}
-
-.services-list3 div h2{
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.services-list3 div a{
-  text-decoration: none;
-  color #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.services-list3 div:hover{
-  background: red;
-  transform: translate(-10px);
-}
-
-/*Batch 4 sa schools*/
-
-#services-batch4{
-  border-color: black;
-}
-
-.services-list4{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  text-align: justify;
-}
-
-.services-list4 div{
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-
-.services-list4 div i{
-  font-size: 100px;
-  margin-bottom: 30px;
-}
-
-.services-list4 div h2{
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.services-list4 div a{
-  text-decoration: none;
-  color #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.services-list4 div:hover{
-  background: red;
-  transform: translate(-10px);
-}
-
-
-/*Batch 5 sa schools*/
-
-#services-batch5{
-  border-color: black;
-}
-
-.services-list5{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  text-align: justify;
-}
-
-.services-list5 div{
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
-}
-
-.services-list5 div i{
-  font-size: 100px;
-  margin-bottom: 30px;
-}
-
-.services-list5 div h2{
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.services-list5 div a{
-  text-decoration: none;
-  color #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.services-list5 div:hover{
-  background: red;
-  transform: translate(-10px);
-}
-
-
-
-
