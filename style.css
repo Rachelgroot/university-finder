@@ -109,6 +109,17 @@ button {
   height: 30px;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+  background-attachment: scroll;
+}
+
+.sticky + .fitler {
+  padding-top: 102px;
+}
+
 .schools {
   display: flex;
   flex: 1;
